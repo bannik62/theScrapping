@@ -1,0 +1,1677 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+<!DOCTYPE html>
+
+<!-- DÃ©tection du Browser  -->
+
+
+
+
+
+
+<!-- browserVendor : Google -->
+<!-- browserName : Chrome -->
+<!-- browserVersion : null -->
+
+
+
+
+
+
+<html lang="fr" class="">
+
+		<!-- DEBUT HEAD -->
+		
+
+
+
+
+  <!-- pageMetadatatag Version Fwk:  -->
+  <!-- pageMetadatatag colorPalette: moncompte -->
+   	
+    
+    
+    
+    
+    
+    
+     
+     
+     
+    
+
+
+
+		
+
+<head>
+
+	
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="OWNER" content="CNAF" />
+	<meta name="AUTHOR" content="CNAF" />
+	
+	
+	
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+
+	<title>CAF - Mon compte - Mes courriers, courriels</title>
+
+	<script type="text/javascript" src="/wps/ruxitagentjs_ICA2NVfqru_10275230919171419.js" data-dtconfig="app=3f8f7016b9b1835e|featureHash=ICA2NVfqru|vcv=2|nsfnv=1|rdnt=1|uxrgce=1|bp=3|cuc=3yk59fmt|mel=100000|dpvc=1|ssv=4|lastModification=1698934304163|rvcl=13|tp=500,50,0,1|agentUri=/wps/ruxitagentjs_ICA2NVfqru_10275230919171419.js|reportUrl=/wps/rb_bf53223bka|rid=RID_-894055567|rpid=1808545114|domain=caf.fr"></script><link href='/wtd-themeresponsivedesign-web/themes/html/ThemeResponsiveDesign/css/styles.css?id=1700359364873' rel="stylesheet">
+	<link href='/wtd-themeresponsivedesign-web/themes/html/ThemeResponsiveDesign/images/favicon.ico' rel="shortcut icon" />
+	
+	<link href="/icfstatiquesangularappli/dist/fonts-cnaf/roboto_cnaf.css?id=1700359364873" rel="stylesheet">
+	
+	
+		<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/css/bootstrap.css?id=1700359364873" rel="stylesheet">
+		<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/css/bootstrap-theme.css?id=1700359364873" rel="stylesheet">
+		<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/contraste/css/bootstrap.css?id=1700359364873" rel="stylesheet">
+		<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/contraste/css/bootstrap-theme.css?id=1700359364873" rel="stylesheet">
+		
+	
+	
+	
+
+	<script src="/icfstatiquesangularappli/dist/jquery/1.11.2/jquery.min.js"></script>
+	<script src="/icfstatiquesangularappli/dist/jquery/ui/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="/icfstatiquesangularappli/dist/jquery/ui/jquery-ui.min.css"> 
+	
+		
+	
+	<script src="/icfstatiquesangularappli/dist/StatiquesCaffr/js/bootstrap.min.js?id=1700359364873"></script>
+	<script src="/icfstatiquesangularappli/dist/StatiquesCaffr/js/headerCnaf.min.js?id=1700359364873"></script>
+	<script>
+		// Surcharge maintienSession pour maintenir aussi la session connect.caf.fr
+		var timeLastMaintienSession;
+		function maintienSession(){
+			var newTime = new Date().getTime();
+			// permet de ne pas refaire l'appel au maintien de session s'il a Ã©tÃ© fait il y a moins de 2 secondes
+			if (!timeLastMaintienSession || Math.abs((newTime - timeLastMaintienSession) / 1000) > 2) { 
+				timeLastMaintienSession = newTime;
+				$.ajax({
+					type: "GET",
+					url: "/wps/session/RefreshSession.jsp",
+					success: function(){
+						// ok
+					},
+					error: function() {
+						// ko
+					}
+				});
+				$.ajax({
+					type: "GET",
+					url: "/token/usagers?contexteAppel=caffr&sessionOnly=true",
+					success: function(){
+						// ok
+					},
+					error: function() {
+						// ko
+					}
+				});
+				if(false){
+					setExpirationSessionTimeout(10);
+				}
+			}
+		}
+	</script>
+	<script src="/icfstatiquesangularappli/dist/angular/bowser.js?id=1700359364873"></script>
+	
+		<script src="/icfstatiquesangularappli/dist/StatiquesCaffr/js/carousel-swipe.min.js?id=1700359364873"></script>
+	
+	
+	
+	<script>
+	var userid = "623-1617668";
+	var useridpersonne = "27708269"; 
+	</script>
+	
+	
+	<script>
+    	var contexteAffichageAngular = "Mes courriers, courriels";
+    	var pageUniqueName = "fr.caf.page.Caffr.MonCompte.MesCourriersCourriels";
+	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="/icfstatiquesangularappli/dist/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="/icfstatiquesangularappli/dist/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	
+		
+	
+		
+			<script src="/icfstatiquesangularappli/dist/angular/smarttag.js?id=1700359364873"></script>
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+</head>
+		
+		<!-- FIN HEAD -->		
+		<!-- DEBUT BODY -->
+		
+		
+			
+		
+		<body role="document" class=" ">
+		
+			<script>
+				// crÃ©ation du cookie userConnectedCaf
+				document.cookie = "userConnectedCaf=true; path=/; domain=.caf.fr;";
+			</script>
+		
+		
+		
+	  
+		
+		
+		
+				<script>
+					var dateExpireCookie = new Date();
+					dateExpireCookie.setTime(dateExpireCookie.getTime() + (24 * 60 * 60 * 1000));
+					document.cookie = "modeAffichage=web; path=/; domain=.caf.fr; expires=" + dateExpireCookie.toGMTString();
+				</script>
+			
+				<script>
+					var dateExpireCookieSessionCaf = new Date();
+					dateExpireCookieSessionCaf.setTime(dateExpireCookieSessionCaf.getTime() + (24 * 60 * 60 * 1000));
+					document.cookie = "session_caf=623; path=/; domain=.caf.fr; expires=" + dateExpireCookieSessionCaf.toGMTString();
+				</script>
+			
+			<script>
+				var dateExpireCookie = new Date();
+				dateExpireCookie.setTime(dateExpireCookie.getTime() + (24 * 60 * 60 * 1000));
+				document.cookie = "portailVirtuel=caffr; path=/; domain=.caf.fr; expires=" + dateExpireCookie.toGMTString(); 
+			</script>
+		
+			<!-- DEBUT POPUP COOKIE -->
+			<div id="popup-accept-cookies" class="popup-cookies">
+				<div class="popup-content container">
+					<div class="row">
+						<div class="popup-text col-sm-12">
+							<p>En poursuivant votre navigation, vous acceptez l'utilisation de cookies pour amÃ©liorer votre navigation, faciliter votre connexion et recueillir des statistiques. <a title="Utilisation de cookies - En savoir plus (Nouvelle FenÃªtre)" href="/redirect/s/Redirect?page=mentionsLegales" target="_blank" class="btn not-accept-cookies">en savoir plus</a></p>
+						</div>
+						<div class="popup-buttons col-sm-12">
+							<button class="pull-right agree-button" type="button">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIN POPUP COOKIE -->
+			
+			<!-- DEBUT BANDEAU DEGRADE -->
+			<div id="bandeau-accept-degrade" class="bandeau-degrade">
+				<div class="bandeau-content container">
+					<div class="row">
+						<div class="bandeau-text col-sm-12">
+							<p>Attention la navigation en mode privÃ© pourrait provoquer certains dysfonctionnements, merci de quitter ce mode pour profiter pleinement de l'ensemble des services proposÃ©s.</p>
+						</div>
+						<div class="bandeau-buttons col-sm-12">
+							<button class="pull-right agree-button not-accept-cookies" type="button">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIN BANDEAU DEGRADE -->	
+		 
+			<!-- DEBUT HEADER -->		
+			<!-- pour le simulateur PA, restÃ© ancienne charte non RSL (propriÃ©tÃ© icfAngular non prÃ©sente), il y a header/footer simplifiÃ©s ,
+				 cela doit restÃ© comme cela jusqu'Ã  la rÃ©Ã©criture de l'appli en RSL -->
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/css/bootstrap-edito.css?id=1700359364873" rel="stylesheet">
+<link href="/icfstatiquesangularappli/dist/StatiquesCaffr/css/bootstrap-edito-contraste.css?id=1700359364873" rel="stylesheet">
+
+
+
+	<a class="lien-evitement-cnaf lien-evitement-refonte-cnaf" id="lien-evitement-cnaf" href="#theme-contenu-content-link-cnaf">Aller au contenu</a>
+
+	<header id="theme-header-caf" role="banner">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 no-padding-right no-padding-left-xs-sm">
+					<div id="theme-header-content-caf">
+						<!-- Menu -->
+						
+						<div class="theme-header-item-caf no-margin-left hidden-md hidden-lg">
+							<a class="btn btn-burger-caf collapsed" role="button" data-toggle="collapse" href="#theme-header-menu-caf" aria-expanded="false" aria-controls="theme-header-menu-caf">
+								<span class="picto picto-burger"></span>
+								<span class="sr-only">Menu</span>
+							</a>
+						</div>
+						
+						
+						<!-- logo caf.fr -->
+						<div class="theme-header-item-caf visible-md visible-lg">
+							
+							<a class="btn btn-logo-caf" href="/redirect/s/Redirect?page=accueilCaffr">
+							
+								
+									
+									<img alt="Accueil caf.fr" src="https://www.caf.fr/sites/default/files/medias/cnaf/logo/logoCNAF.png">
+								
+							
+							</a>
+							
+						</div>
+
+						<!-- domaine caf.fr -->
+						<div class="theme-header-item-caf">
+							
+								<a class="btn btn-domaine-caf" href="/redirect/s/Redirect?page=accueilCaffr">
+							
+									<img alt="Accueil caf.fr" src="/icfstatiquesangularappli/dist/images/caf.fr.svg">
+							
+								</a>
+							
+						</div>
+
+						<!-- dropdown Espaces -->
+						
+						<div class="theme-header-item-caf visible-md visible-lg">
+							<div class="dropdown dropdown-caf">
+							
+								<a id="dropdownEspaces" class="theme-display-flex-center-caf" data-target="#" href="https://www.caf.fr/allocataires" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Allocataires
+									<span class="caret"></span>
+								</a>
+							
+								<ul class="dropdown-menu" aria-labelledby="dropdownEspaces">
+							
+									<li><a href="https://www.caf.fr/partenaires">Partenaires</a></li>
+							
+									<li><a href="https://www.caf.fr/nous-connaitre">Nous connaître</a></li>
+							
+								</ul>
+							</div>
+						</div>
+						
+
+						<!-- accessibilite -->
+						
+						
+						<div class="theme-header-item-caf">
+							<a id="btn-menu-accessibilite-caf" class="btn" href="javascript:void(0)" onclick="manageContrasteThemeCnaf()" title="Cliquer ici pour changer le mode d'affichage des couleurs (version contrastée ou version standard)">
+								<span class="picto picto-accessibilite picto-accessibilite-close"></span>
+								<span class="text-btn visible-md visible-lg" aria-live="polite">Version contrastée</span>
+								<span class="text-btn-mobile visible-xs visible-sm sr-only" aria-live="polite">Version contrastée</span>
+							</a>
+						</div>
+						
+
+						<div class="fill-remaining-space"></div>
+
+						<!-- Ma Caf -->
+						
+						
+						
+							
+						
+						<div class="theme-header-item-caf visible-md visible-lg">
+							<a id="btn-menu-ma-caf" class="btn" href="https://www.caf.fr/allocataires/caf-du-pas-de-calais" title="Caisse d'Allocations familiales du Pas-de-Calais" >
+								<span class="picto picto-ma-caf"></span>
+								<span class="visible-md visible-lg">Ma Caf - 62</span>
+							</a>
+						</div>
+						
+
+						
+						
+						
+						
+							<!-- enveloppe -->
+							<div class="theme-header-item-caf">
+								 
+								<a id="btn-enveloppe-caf" class="btn" href="/redirect/s/Redirect?page=monCompteMesCourriers" >  
+									<span class="picto picto-enveloppe-blanc"></span>  
+									<span class="visible-md visible-lg">Courriers</span> 
+									<span class="sr-only visible-xs visible-sm">Courriers</span>
+								</a>
+									
+							</div>
+							<!-- Mon Compte -->
+							<div class="theme-header-item-caf">
+								<a id="btn-menu-moncompte-caf" class="btn collapsed" data-toggle="collapse" data-target="#theme-menu-moncompte-collapse-caf" href="#" onclick="return false" role="button">
+									<span class="picto picto-mon-compte"></span>
+									<span class="sr-only">Mon Compte</span>
+								</a>
+							</div>
+							<!-- déconnexion -->
+							<div class="theme-header-item-caf visible-md visible-lg">
+								<a id="btn-menu-deconnexion-moncompte-caf" class="btn" href="/redirect/s/Redirect?page=monCompteDeconnexion" >
+									<span class="picto picto-mon-compte-deconnexion"></span>
+									<span class="visible-md visible-lg">Déconnexion</span>
+								</a>
+							</div>
+						
+						
+						
+
+						<!-- recherche -->
+						
+						<div class="theme-header-item-caf">
+							
+								<a class="btn btn-recherche-caf" href="/redirect/s/Redirect?page=recherche">
+									<span class="picto picto-recherche"></span>
+									<span class="sr-only">Rechercher</span>
+								</a>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="collapse hidden-md hidden-lg" id="theme-header-menu-caf">
+			<div class="panel-group" id="theme-header-menu-accordion-caf">
+			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a class="btn-block accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#theme-header-menu-accordion-caf" href="#theme-header-menu-block-links-1-caf">
+								Allocataires
+							</a>
+						</div>
+					</div>
+				
+					<ul id="theme-header-menu-block-links-1-caf" class="panel-collapse collapse">
+					
+						<li><a href="https://www.caf.fr/" class="">Accueil</a></li>
+					
+						<li><a href="https://www.caf.fr/allocataires/actualites" class="">Actualités</a></li>
+					
+						<li><a href="https://www.caf.fr/allocataires/aides-et-demarches" class="">Aides et démarches</a></li>
+					
+						<li><a href="https://www.caf.fr/allocataires/ma-caf" class="">Ma Caf</a></li>
+					
+						<li><a href="https://www.caf.fr/allocataires/vies-de-famille" class="text-primary">Le magazine Vies de Famille</a></li>
+					
+					</ul>
+				
+				</div>
+			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a class="btn-block "  href="https://www.caf.fr/partenaires">
+								Partenaires
+							</a>
+						</div>
+					</div>
+				
+				</div>
+			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a class="btn-block "  href="https://www.caf.fr/nous-connaitre">
+								Nous connaître
+							</a>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="visible-md visible-lg" id="theme-header-menu-links">
+			<ul>
+				
+				<li><a href="https://www.caf.fr/" class="">Accueil</a></li>
+				
+				<li><a href="https://www.caf.fr/allocataires/actualites" class="">Actualités</a></li>
+				
+				<li><a href="https://www.caf.fr/allocataires/aides-et-demarches" class="">Aides et démarches</a></li>
+				
+				<li><a href="https://www.caf.fr/allocataires/ma-caf" class="">Ma Caf</a></li>
+				
+				<li><a href="https://www.caf.fr/allocataires/vies-de-famille" class="text-primary">Le magazine Vies de Famille</a></li>
+				
+			</ul>
+		</div>
+		
+	</header>
+
+	<!-- Menu Mon Compte -->
+	<div id="theme-menu-moncompte-collapse-caf" role="dialog" tabindex="-1" aria-labelledby="titreMenuMonCompte" class="collapse navbar-collapse">
+		<div role="heading" aria-level="1" class="sr-only" id="titreMenuMonCompte">Menu Mon Compte</div>
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown item-deconnexion-caf visible-xs visible-sm clearfix"><div class="col-xs-12"><a class="btn btn-block btn-secondary-cnaf" title="Déconnexion de Mon Compte" href="/redirect/s/Redirect?page=monCompteDeconnexion">Déconnexion</a></div></li><li role="separator" class="divider visible-xs visible-sm" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/tableaudebord/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMFBQUTAwUTNTTVA3TEMxMEgw/">Accueil Mon compte</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/mespaiementsmesdroits/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwMFUz/">Consulter mes paiements et droits</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/mesattestations/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwMDkx/">Télécharger une attestation</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/mesdemarches/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwMFA3/">Suivre mes démarches</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a class="active" href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/mescourrierscourriels/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwMEwy/" title="Consulter mes courriers, courriels Page active">Consulter mes courriers, courriels</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/mesressources/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwMDM3/">Mes ressources</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/monprofil/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwR0c3/">Déclarer un changement</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/faireunedemandedeprestation/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwR0w2/">Simuler ou demander une prestation</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/monagenda/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwOFM0/">Mon agenda</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="http://wwwd.caf.fr/wps/myportal/caffr/moncompte/contactermacaf/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_RzNHD2MDYwMLIP9jQwCjX1MvUIdnQ0MfIz0w1EVeFi6ORkEhliaeHkbexobGBjoRxGj3wAHcCRSPx4FUfiND9ePQrUCiw8ImVGQGxoaYZDpCACNAI_e/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X05BNkFIMzAyMDlTTzIwUTNMNUpVQUMwODIx/">Contacter ma Caf</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Gérer Mon Compte</a><ul class="dropdown-menu"><li class="dropdown"><a href="/redirect/s/Redirect?page=connectModifierMotDePasse">Modifier mon mot de passe</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="/redirect/s/Redirect?page=connectHistoriqueMonCompte">Mon historique</a></li><li role="separator" class="divider-light" aria-hidden="true"></li><li class="dropdown"><a href="/redirect/s/Redirect?page=portailTuteurPhysique">Espace Tuteur</a></li></ul></li><li role="separator" class="divider hidden-xs hidden-sm" aria-hidden="true"></li><li class="dropdown item-deconnexion-caf hidden-xs hidden-sm clearfix"><div class="col-xs-12"><a class="btn btn-block btn-secondary-cnaf" title="Déconnexion de Mon Compte" href="/redirect/s/Redirect?page=monCompteDeconnexion">Déconnexion</a></div></li>
+				
+		</ul>
+	</div>
+
+
+
+<script>
+	function getFocusables(elem) {
+		if (elem) {
+			return elem.find("[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex='-1'])");
+		}
+		return elem;
+	}
+	
+	function getVisibles(elems) {
+		if (elems) {
+			return elems.filter(function(e) {return $(this).is(":visible");});
+		}
+		return elems;
+	}
+
+	function positionneOverlayMenuMonCompteUnderHeader() {
+		$(".overlay-caf-for-menu-moncompte").css({
+			"top":($("#theme-header-content-caf").height() - $(window).scrollTop()) + "px"
+		});
+	}
+
+	$(document).ready(function(){
+
+		var keyCodes = {tab: 9, escape: 27};
+		var themeMenuMCElement = $("#theme-menu-moncompte-collapse-caf");
+		var themeMenuCafElement = $("#theme-header-menu-caf");
+
+		/* Gestion echap sur menu Caf et menu MC */
+		function echapKey(event) {
+			if (event.keyCode === keyCodes.escape) {
+				if (themeMenuCafElement.is(":visible")) {
+					$("#theme-header-caf .btn-burger-caf").click();
+				} else if (themeMenuMCElement.is(":visible")) {
+					$("#theme-header-content-caf .picto-mon-compte").parent(".btn").click();
+				}
+			}
+		}
+
+		/* Gestion tab dans menu Caf */
+		$("#theme-header-caf .btn-burger-caf").get(0).addEventListener('keydown', function(event) {
+			if (event.keyCode !== keyCodes.tab) {
+				return;
+			}
+
+			if (themeMenuCafElement.is(":visible")) {
+				if (event.shiftKey) { // shift + tab
+					event.preventDefault();
+					getVisibles(getFocusables(themeMenuCafElement)).last().focus();
+				}
+			}
+		});
+		getFocusables(themeMenuCafElement).each(function() {
+			$(this).get(0).addEventListener('keydown', function(event) {
+				if (event.keyCode !== keyCodes.tab) {
+					return;
+				}
+
+				if (!event.shiftKey) { // tab
+					if (event.target === getVisibles(getFocusables(themeMenuCafElement)).last().get(0)) {
+						event.preventDefault();
+						$("#theme-header-caf .btn-burger-caf").focus();
+					}
+				}
+			});
+		});
+
+		/* Gestion ouverture du dropdown des Espaces */
+		$('#dropdownEspaces').closest(".dropdown-caf").on('show.bs.dropdown', function (e) {
+			// fermeture menu MC si ouvert
+			if (themeMenuMCElement.is(":visible")) {
+				$("#theme-header-content-caf .picto-mon-compte").parent(".btn").click();
+			}
+		})
+
+		/* Gestion l'ouverture / fermeture du menu Caf */
+		themeMenuCafElement.on("show.bs.collapse", function(e){
+			// fermeture menu MC si ouvert
+			if (themeMenuMCElement.is(":visible")) {
+				$("#theme-header-content-caf .picto-mon-compte").parent(".btn").click();
+			}
+	
+			$(window).bind('keydown', echapKey);
+			if ($(this).is(e.target)) {
+				$(".theme-header-item-caf:visible").filter(function(e) {return $(this).find(".btn-burger-caf").length === 0;}).each(function(index) {
+					$(this).attr("data-class-to-set", $(this).attr("class"));
+					$(this).addClass("visible-md visible-lg");
+				});
+				$("#btn-menu-ma-caf").closest(".theme-header-item-caf").attr("data-class-to-set", $("#btn-menu-ma-caf").closest(".theme-header-item-caf").attr("class"));
+				$("#btn-menu-ma-caf").closest(".theme-header-item-caf").removeClass("visible-md visible-lg");
+				$("#btn-menu-ma-caf").find("span:not(.picto)").each(function() {
+					$(this).attr("data-class-to-set", $(this).attr("class"));
+					$(this).removeClass("visible-md visible-lg");
+				});
+				setTimeout(function() { $("#theme-header-caf .btn-burger-caf").focus(); }, 0);
+			}
+		});
+		themeMenuCafElement.on("hidden.bs.collapse", function(e){
+			$(window).unbind('keydown', echapKey);
+			if ($(this).is(e.target)) {
+				$(".theme-header-item-caf[data-class-to-set").each(function(index) {
+					$(this).attr("class", $(this).attr("data-class-to-set"));
+				});
+				$("#btn-menu-ma-caf").closest(".theme-header-item-caf").attr("class", $("#btn-menu-ma-caf").closest(".theme-header-item-caf").attr("data-class-to-set"));
+				$("#btn-menu-ma-caf").find("span:not(.picto)").each(function() {
+					$(this).attr("class", $(this).attr("data-class-to-set"));
+				});
+				$("#theme-header-caf .btn-burger-caf").focus();
+			}
+		});
+
+		if (themeMenuMCElement.length !== 0) {
+			/* Gestion tab dans menu MC */
+			$("#btn-menu-moncompte-caf").get(0).addEventListener('keydown', function(event) {
+				if (event.keyCode !== keyCodes.tab) {
+					return;
+				}
+
+				if (themeMenuMCElement.is(":visible")) {
+					event.preventDefault();
+					var focusables = getFocusables(themeMenuMCElement);
+					if (event.shiftKey) { // shift + tab
+						getVisibles(focusables).last().focus();
+					} else { // tab
+						getVisibles(focusables).first().focus();
+					}
+				}
+			});
+			getFocusables(themeMenuMCElement).each(function() {
+				$(this).get(0).addEventListener('keydown', function(event) {
+					if (event.keyCode !== keyCodes.tab) {
+						return;
+					}
+
+					var focusables = getFocusables(themeMenuMCElement);
+					if (event.shiftKey) { // shift + tab
+						if (event.target === getVisibles(focusables).first().get(0)) {
+							event.preventDefault();
+							$("#btn-menu-moncompte-caf").focus();
+						}
+					} else { // tab
+						if (event.target === getVisibles(focusables).last().get(0)) {
+							event.preventDefault();
+							$("#btn-menu-moncompte-caf").focus();
+						}
+					}
+				});
+			});
+
+			/* Gestion overlay sur page à l'ouverture / fermeture du menu MC */
+			themeMenuMCElement.on("show.bs.collapse", function(){
+				// fermeture menu Caf si ouvert
+				if (themeMenuCafElement.is(":visible")) {
+					$("#theme-header-caf .btn-burger-caf").click();
+				}
+			
+				$(window).bind('keydown', echapKey);
+				setTimeout(function() { $("#theme-header-content-caf .picto-mon-compte"); }, 0);
+
+				var zIndexThemeMenu = themeMenuMCElement.css("z-index");
+				// Pour afficher le menu burger par dessus l'overlay
+				$("body").append("<div class='overlay-caf overlay-caf-for-menu-moncompte'></div>");
+				$(".overlay-caf-for-menu-moncompte").css({
+					"z-index": zIndexThemeMenu-1,
+					"height": "auto"
+				});
+				positionneOverlayMenuMonCompteUnderHeader();
+				// Pour fermer le menu burger lorsqu'on clique en dehors
+				$(".overlay-caf-for-menu-moncompte").click(function (event) {
+					$("#theme-header-content-caf .picto-mon-compte").parent(".btn").click();
+				});
+			});
+			themeMenuMCElement.on("hidden.bs.collapse", function(e){
+				$(window).unbind('keydown', echapKey);
+				// Pour enlever le overlay sur la page lorsque le menu burger est fermé
+				$(".overlay-caf-for-menu-moncompte").remove();
+				if ($(this).is(e.target)) {
+					$("#btn-menu-moncompte-caf").focus();
+				}
+			});
+		}
+
+		$(window).scroll(function () {
+			positionneOverlayMenuMonCompteUnderHeader();
+		});
+	});
+
+	var timeoutForResize = null;
+	$(window).resize(function() {
+		if (timeoutForResize != null) {
+			clearTimeout(timeoutForResize);
+		}
+
+		timeoutForResize = setTimeout(function() {
+			positionneOverlayMenuMonCompteUnderHeader();
+		}, 50);
+	});
+	
+	
+</script>
+
+
+<div id="modal-popup-geoloc" tabindex="-1" class="modal fade">
+	<div class="modal-dialog modal-dialog-popup" role="dialog" aria-labelledby="titreModalGeoloc">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close-cnaf" data-dismiss="modal" aria-label="Fermer la popup"></button>
+				<div role="heading" aria-level="1" class="texte-bold" id="titreModalGeoloc"><img alt="" src="/icfstatiquesangularappli/dist/images/Icon_Small_Francewithpin.svg" />Choisir ma Caf</div>
+			</div>
+			<div class="modal-body">
+				<form onsubmit="return choiceGeoloc()">
+					<label for="code-postal-caf" class="texte-medium">Afin de mieux vous accompagner dans vos besoins et de personnaliser les contenus du site, la Caf vous propose d'indiquer votre code postal ou votre ville :</label>
+					<input type="text" id="code-postal-caf" name="zipcode" class="form-control" placeholder="Code postal ou ville" role="combobox" aria-controls="listbox-container-code-postal-caf" aria-owns="listbox-container-code-postal-caf" aria-expanded="false" aria-autocomplete="list" autocomplete="off" aria-describedby='edit-ville erreur-codepostal'>			
+					<p class="text-center hidden" id="edit-ville"></p>
+					<p class="text-center hidden text-danger" id="erreur-codepostal"></p>
+					<input type="hidden" id="code-orga-caf"  />
+					<div class="text-center">
+						<button class="btn btn-primary-cnaf" type="submit">Valider</button>
+						<a class="btn-block" href="javascript:void(0)" data-dismiss="modal">J'indiquerai mon code postal une autre fois</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$("#modal-popup-geoloc ul.ui-autocomplete").attr("id", $("#code-postal-caf").attr("aria-controls"));
+	});
+	// afficheLocalites
+	function displayPopupGeoloc(reload, contextRdv) {
+		var modalElement = $("#modal-popup-geoloc");
+		modalElement.modal({keyboard: false});
+		modalElement.on('hidden.bs.modal', function (e) {
+		  $("#btn-menu-ma-caf").focus();
+		});
+		if (reload & !contextRdv) {
+			modalElement.find("form").attr("onsubmit", $("#modal-popup-geoloc").find("form").attr("onsubmit").replace("choiceGeoloc()", "choiceGeoloc(true, false)"));
+		}
+		else if (reload & contextRdv) {
+			modalElement.find("form").attr("onsubmit", $("#modal-popup-geoloc").find("form").attr("onsubmit").replace("choiceGeoloc()", "choiceGeoloc(true, true)"));
+		}
+		return false;
+	}
+	function choiceGeoloc(reload, contextRdv) {
+		var modalElement = $("#modal-popup-geoloc");
+		var codePostal = $('#code-postal-caf').val();
+		 // si je clic sur valider tester si le champ est de longueur 5
+		if (codePostal.length < 5 || $('#code-orga-caf').val() === "") {
+			$('#erreur-codepostal').text('Code postal inconnu ou ville non sélectionnée. Veuillez recommencer.');
+			$('#erreur-codepostal').removeClass("hidden");
+		} else {
+			var codeOrga = (modalElement.find("#code-orga-caf").val());
+			if (contextRdv) {
+				document.cookie = "codeOrgaRdv=" + codeOrga+"; path=/"
+			}
+			else {
+				var dateExpireCookieSessionCaf = new Date();
+				dateExpireCookieSessionCaf.setTime(dateExpireCookieSessionCaf.getTime() + (24 * 60 * 60 * 1000));
+				document.cookie = "session_caf=" + codeOrga+"; path=/; domain=.caf.fr; expires=" + dateExpireCookieSessionCaf.toGMTString();
+			}
+			if (reload) {
+				window.location.reload();
+			}
+			if (codeOrga.startsWith("97") == false && codeOrga != "641" && codeOrga != "642") {
+				codeOrga = codeOrga.substring(0, 2);
+			}
+			$("#btn-menu-ma-caf span:not(.picto)").text("Ma Caf - " + codeOrga);
+			modalElement.modal('hide');
+		}
+		return false;
+	}
+
+	$('#code-postal-caf').click(function(event){
+		$('#erreur-codepostal').text('');
+		$('#erreur-codepostal').addClass("hidden");
+	});
+	function displayErrorCodePostal() {
+		$('#edit-ville').addClass("hidden");
+		$('#edit-ville').text('');
+		$('#erreur-codepostal').text('Code postal inconnu ou ville non sélectionnée. Veuillez recommencer.');
+		$('#erreur-codepostal').removeClass("hidden");
+		$('#code-orga-caf').val("");
+		$('#code-postal-caf').attr('aria-expanded','false');
+	}
+	$('#code-postal-caf').blur(function() {
+		var codePostal = $('#code-postal-caf').val();
+		if (codePostal && codePostal.length > 0 && codePostal.length < 5) {
+			displayErrorCodePostal();
+		} else if (codePostal && codePostal.length == 5 && $('#code-orga-caf').val() === "") {
+			displayErrorCodePostal();
+		}
+	});	
+	$("#code-postal-caf").autocomplete({
+		appendTo: "#modal-popup-geoloc",
+		source: function (request, response) {
+			var codePostal = $("#code-postal-caf").val();
+			if (codePostal.length >= 3) {
+				$.ajax({
+					url: "/wps/s/GenerateTokenJwtPublic"
+				}).done(function(data) {
+					var token = data.cnafTokenJwt;
+					if (token.indexOf("Bearer ") != 0) {
+						token = "Bearer "+token;
+					}
+					$.ajax({
+						url: '/api/amabisfront/v1/localites',
+						type:"get",
+						dataType: 'json',
+						data: 'codePays=FRA&codePostalVille='+codePostal ,
+						headers: {
+							"Authorization": token
+						}				
+					}).done(function(data) {
+						 var autoCompleteData = Array();
+						if (data.listRechLoc.length > 0)
+						{
+							var lines = data.listRechLoc;
+							for (var j = 0; j < lines.length; j++) {
+								var values = lines[j].lib.split(';');
+		
+								
+								var cpEtVille = values[0]; // cp et ville
+								var values2 = cpEtVille.split(' '); // cp
+								var cp = values2.shift();	
+								var villeOuLD = values2.join(' ');
+								if (values.length == 2 ) {// présence lieudit
+									cpEtVille = cp +' ' + values[1]; 
+									villeOuLD = values[1];
+								}
+								
+									
+								autoCompleteData.push({
+									label: cpEtVille,
+									value: cp,
+									ville: villeOuLD,
+									idCommune: lines[j].identifiantCommune
+								});
+							}	
+						 } else {
+							displayErrorCodePostal();
+						 }
+						 var results = $.ui.autocomplete.filter(autoCompleteData, request.term);
+						 response( results);
+						$('#code-postal-caf').attr('aria-expanded','true');
+					}).fail(function() {
+						displayErrorCodePostal();
+					});
+				});
+			}
+			else { // en dessous de 3 chiffres ,renvoyer une liste vide
+				response('');
+				$('#edit-ville').addClass("hidden");
+				$('#edit-ville').text('');
+			};
+		},
+		select: function(event, ui){
+			var idCommune =  ui.item.idCommune;
+			var codePostal = ui.item.value;
+			$('#edit-ville').text('Ville sélectionnée : ' + ui.item.ville);
+			$('#edit-ville').removeClass("hidden");
+			$("#code-postal-caf").attr("aria-label", ui.item.label);
+			$.ajax({
+				url: "/wps/s/GenerateTokenJwtPublic"
+			}).done(function(data) {
+				var token = data.cnafTokenJwt;
+				if (token.indexOf("Bearer ") != 0) {
+					token = "Bearer "+token;
+				}
+			
+				$.ajax({
+					url: '/api/cnafcompteleprocfront/v1/infoscommune',
+					type:"get",
+					dataType: 'json',
+					data: 'code_postal='+codePostal+ "&nidcom="+idCommune ,
+					headers: {
+						"Authorization": token
+					}				
+				}).done(function(data) {
+					if (data && data.codeOrga) {
+						$('#erreur-codepostal').text('');
+						$('#erreur-codepostal').addClass("hidden");
+						$('#code-orga-caf').val(data.codeOrga);
+						$('#code-postal-caf').attr('aria-expanded','false');
+					} else {
+						displayErrorCodePostal();
+					}
+				}).fail(function() {
+					displayErrorCodePostal();
+				});
+			});
+		},
+		focus : function (event, ui) {
+			event.preventDefault();
+			var menu = $(this).data("uiAutocomplete").menu.element;
+			var focusid = menu.find("a.ui-state-active").attr('id');
+			$('#code-postal-caf').attr('aria-activedescendant',focusid);
+			$(".ui-autocomplete a").attr('aria-selected','false');
+			$(".ui-autocomplete a.ui-state-active").attr('aria-selected','true');
+		},
+		messages : {
+			noResults : 'Pas de résultats trouvés.',
+			results : function(count) {
+				return count + ' résultat' + (count > 1 ? 's' : '') + ' trouvé' + (count > 1 ? 's' : '') + '. Veuillez utiliser les flêches haut et bas pour naviguer.';
+			}
+		}
+	}).click(function(){
+		$(this).data("uiAutocomplete").search($(this).val());
+	});
+	$("#code-postal-caf").blur(function(){
+		$('#code-postal-caf').attr('aria-expanded','false');
+	});
+	$("#code-postal-caf").data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+		ul.attr('role', 'listbox');
+		return $( "<li role='presentation'></li>" )
+		.append( "<a role=\"option\" class=\"btn-block\">" + item.label + "</a>" )
+		.appendTo(ul);
+	};
+	$("#code-postal-caf").data( "ui-autocomplete" )._renderMenu = function (ul, items) {
+		var that = this;
+		$.each( items, function( index, item ) {
+			that._renderItemData( ul, item );
+		});
+		$( ul ).attr( 'role','listbox' );
+		$( ul ).attr( 'id','listbox-container-code-postal-caf' );
+		$( ul ).find( "li:odd" ).addClass( "odd" );
+	};
+</script>
+
+			
+			<!-- FIN HEADER -->		
+		  
+			
+			<!-- TEST obsolesence des navigateurs  -->
+			<script>
+				if ((bowser.msie && bowser.version < 11)
+	          		|| (bowser.chrome && bowser.version < 26)
+	          		|| (bowser.firefox && bowser.version < 1.5)) {
+	 
+	        		window.location.replace("https://www.caf.fr/navigateur-obsolete.html");
+	    		}
+    		</script>
+			
+			
+			<!-- FIN TEST obsolesence des navigateurs  -->
+			<!-- DEBUT CONTENU -->
+			
+
+
+
+
+
+
+
+
+
+<main id="theme-contenu-cnaf" class="icf-angular-cnaf  logged " role="main">
+	
+		
+
+
+
+
+
+<div id="theme-contenu-filariane-cnaf">
+
+		
+			<nav role="navigation" aria-label="position dans le site">
+			<ol class="breadcrumb">
+			
+
+				<li><a href="/redirect/s/Redirect?page=accueilCaffr">Accueil</a></li>
+
+			
+					 
+			
+					
+						
+							
+								<li ><a href="/redirect/s/Redirect?page=monCompte">Mon compte</a></li>
+								
+							
+							
+						
+					 
+			
+					
+						
+							
+							
+								
+								<li>Mes courriers, courriels</li>
+								
+								
+							
+						
+					 
+			 
+			</ol>
+			</nav>
+			
+
+</div>
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9" id="theme-contenu-content-wrapper-cnaf" style="float: none; margin: auto;">
+				<div id="theme-contenu-content-cnaf">
+					<a id="theme-contenu-content-link-cnaf" class="sr-only" tabindex="-1" href="javascript:void(0);">Contenu principal de la page</a>
+					
+						
+		                   	
+				                   	<div class="container">
+								       <h1 class="titre-page-cnaf text-primary text-uppercase">Mes courriers, courriels</h1>
+				                   	</div>
+				                   	
+						
+						
+					
+	                
+					<h2 class="sr-only">Contenu de la page</h2>
+					
+					 
+<div class="layoutRow">
+ 
+<div class="layoutColumn"><a name="Z7_NA6AH30209SO20Q3L5JUAC00D4"></a><div class="wpsPortletBody">
+
+<link href="/courrierscourrielsappli/dist/styles.css?id=1700359365797" rel="stylesheet">
+<script type="text/javascript">
+var namespace = "ns_Z7_NA6AH30209SO20Q3L5JUAC00D4_";
+</script>
+
+<div id="ns_Z7_NA6AH30209SO20Q3L5JUAC00D4_angularApp"></div>
+<script src="/courrierscourrielsappli/dist/configPortal.js?id=1700359365797"></script>
+
+
+
+<script type="text/javascript">
+<!-- Paramétrage du CnafCommonsModule -->
+var mapForAngularAppli={};
+<!-- AppConfig -->
+mapForAngularAppli.appConfig={};
+<!-- Temps avant qu'un token soit considéré comme expiré -->
+mapForAngularAppli.appConfig.offsetTokenTimeValidity = 15; 
+<!-- URL de génération du token -->
+mapForAngularAppli.appConfig.urlServletJWT='/wps/s/GenerateTokenJwt/'; 
+<!-- Token -->
+mapForAngularAppli.appConfig.tokenJWT="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MjMtMTYxNzY2OCIsImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiI6ImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiIsImxpc3RlRm95ZXJzIjoiMTA2NzE0MDktNjIzLTE2MTc2NjgtdHJ1ZS1BRkYtZmFsc2UiLCJpZEZveWVyIjoiMTA2NzE0MDkiLCJtYXRyaWN1bGUiOiIxNjE3NjY4Iiwicm9sZXMiOlsicmVzcG9uc2FibGVEb3NzaWVyIl0sImFsbG9jYXRhaXJlc2FmZiI6ImFsbG9jYXRhaXJlc2FmZiIsImlzcyI6Imh0dHA6Ly9hdXRoZ2F0ZXdheS5zaS5jbmFmLmluZm86ODg4OCIsImRyYWJzbm1vaW5zMSI6IiIsImNvZGVPcmdhIjoiNjIzIiwiaXNBdXRob3JpemVkIjoidHJ1ZSIsImRyYWJzbm1vaW5zMiI6IiIsImFsbG9jYXRhaXJlc3NpbXVsYXRpb24iOiJhbGxvY2F0YWlyZXNzaW11bGF0aW9uIiwic2NvcGUiOiJ1c2FnZXJzIiwiYWxsb2NhdGFpcmVzbG9jYXRpb25hbCI6ImFsbG9jYXRhaXJlc2xvY2F0aW9uYWwiLCJpZFBlcnNvbm5lIjoiMjc3MDgyNjkiLCJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiOiJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiLCJhbGxvY2F0YWlyZXNhbCI6ImFsbG9jYXRhaXJlc2FsIiwiZXhwIjoxNzAwMzkxOTE2ODg5LCJpYXQiOjE3MDAzOTE2MTY4ODksImp0aSI6ImFlOTZlNTdkLWY1MTMtNGE1NC04YTNjLTZmZmIzYmVhOTM1ZSIsImRhdGVFbnZDYWZmciI6IjIwMjMxMTE5IiwiYWxsb2NhdGFpcmVzdHJhbnNtZXR0cmVkb2MiOiJhbGxvY2F0YWlyZXN0cmFuc21ldHRyZWRvYyIsImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyI6ImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyIsImRhdGVhZmZkYW5zbGVmdXR1ciI6Im51bGwiLCJhbGxvY2F0YWlyZXMiOiJhbGxvY2F0YWlyZXMiLCJhbGxvY2F0YWlyZXNkb3NzaWVycHJpbmNpcGFsIjoiYWxsb2NhdGFpcmVzZG9zc2llcnByaW5jaXBhbCIsImZyYW5jZUNvbm5lY3RlZCI6ImZhbHNlIiwiYXVkIjoiY2FmZnIiLCJhbGxvY2F0YWlyZXNkZW1hcmNoZXNldGNvdXJyaWVycyI6ImFsbG9jYXRhaXJlc2RlbWFyY2hlc2V0Y291cnJpZXJzIiwibmJmIjoxNzAwMzkxNjA2ODg5LCJhbGxvY2F0YWlyZXNhcGxzZXVsIjoiYWxsb2NhdGFpcmVzYXBsc2V1bCIsImRvbWFpbiI6InByaXZhdGUiLCJhbGxvY2F0YWlyZXNhZ2VuZGEiOiJhbGxvY2F0YWlyZXNhZ2VuZGEiLCJhbGxvY2F0YWlyZXNhbDI0ZGVybmllcnNtb2lzIjoiYWxsb2NhdGFpcmVzYWwyNGRlcm5pZXJzbW9pcyIsImRvc3NpZXJQYXJEZWZhdXQiOiJ0cnVlIiwibnVtZXJvaW50ZXJuZXBlcnNvbm5lIjoiNjUxNzgwIn0.A3EwLMx6WYDbPvP5lHNyXFQWXHe25trCh9hB7myG4gnHP0gR_aJ5_Rq9c6Tk5jJ43pjd3FIgeyvfeD8CyVrZzs-4ix82kG-WRllzMmTycclbWrh4KdluZ-zb7hSmENtOuJhWKxceCGhqji1k757-NfvH5_1msnhqUN5Ow8UtUy0fi77Dvxw7kLccQRqHJNlvVMmDtEw2Mf11UnaVjr8JhIfI1lBi19T_ttV5ejWtndf6ppJLz8ts_Syh4P37hIfRqIJ0BvL8aTwRmBjTm_NPvN2WxmwKmBKpA7Gc0X15PGF7B1OqyvxADxp3ejAl8r5YbVhBavaXRqdLP_9mBYwZfg";
+
+<!-- UserConfig -->
+mapForAngularAppli.userConfig={
+
+	'codeOrga':'623',
+	'matricule':'1617668',
+	'listGroups':['allocatairesaff','allocatairesagenda','allocatairesaplseul','allocatairessimulation','allocatairestransmettredoc','allocataires','allocataireslocational','allocatairesdossierprincipal','allocatairesafficherressources','allocatairesal24derniersmois','allocataireslocationaplseul','allocatairesal','allocatairesrecueilinformation','allocatairesdemarchesetcourriers'],
+
+	'CNAF_LIST_GROUP':{GROUP_ALLOCATAIRES_RADIES:"allocatairesradies",GROUP_ALLOCATAIRES_AAH_ANNUELLE:"allocatairesaahannuelle",GROUP_ALLOCATAIRES_ETU_MAINTIEN_LOG:"allocatairesetumaintienlog",GROUP_ALLOCATAIRES_AFFILIES:"allocatairesaff",GROUP_ALLOCATAIRES_AAH_COUPLE_DECONJUGALISE:"allocatairesaahtrimestriellecoupledeconjugalise",GROUP_ENFANTS_AUTRES_PERSONNES:"enfantsautrespersonnes",GROUP_ALLOCATAIRES_RSAPA_24_DERNIERS_MOIS:"allocatairesrsapa24derniersmois",GROUP_ALLOCATAIRES_CMAF:"allocatairescmaf",GROUP_CONJOINTS_RID:"conjointsrecueilinformation",GROUP_ALLOCATAIRES_DR:"allocatairesdr",GROUP_MULTI_AFFILIATION:"multiaffilie",GROUP_USAGERS_PRIMO:"usagersprimo",GROUP_ALLOCATAIRES_AFFILIES_DU_FUTUR:"allocatairesaffiliesdufutur",GROUP_CONJOINTS_AL_SEUL:"conjointsalseul",GROUP_ALLOCATAIRES_DPN:"allocatairesdpn",GROUP_CONJOINTS_DTRPA:"conjointsdtrpa",GROUP_ALLOCATAIRES_AGENDA:"allocatairesagenda",GROUP_ALLOCATAIRES_AAH_ANNUELLE_COUPLE_DECONJUGALISE:"allocatairesaahannuellecoupledeconjugalise",GROUP_ALLOCATAIRES_AAH_ISOLE:"allocatairesaahtrimestrielleisole",GROUP_ALLOCATAIRES_REMBOURSEMENTS:"allocatairesremboursements",GROUP_ALLOCATAIRES_NEO_PRIMO:"allocatairesneoprimo",GROUP_ALLOCATAIRES_AAHPA:"allocatairesaahpa",GROUP_ALLOCATAIRES_AAH_ANNUELLE_COUPLE_CONJUGALISE:"allocatairesaahannuellecoupleconjugalise",GROUP_ALLOCATAIRES_AAH_24_DERNIERS_MOIS:"allocatairesaah24derniersmois",GROUP_ALLOCATAIRES_ACCESSION_APL_SEUL:"allocatairesaccessionaplseul",GROUP_ALLOCATAIRES_APL_SEUL:"allocatairesaplseul",GROUP_CONJOINTS_DELEGUES:"conjointsdelegues",GROUP_ALLOCATAIRES_SIMULATION:"allocatairessimulation",GROUP_ALLOCATAIRES_AMI:"allocatairesami",GROUP_INCITATION_DELEGATION:"allocatairesincitationdelegation",GROUP_ALLOCATAIRES_DR_ANNEE_MOINS_2:"allocatairesdranneemoins2",GROUP_ALLOCATAIRES_ACCESSION_AL:"allocatairesaccessional",GROUP_ALLOCATAIRES_DSIT_BLOQUEE:"allocatairesdsitbloquee",GROUP_ALLOCATAIRES_DRABS_ANNEEMOINS2_ALLOCCJT:"allocatairesdrabsnmoins2alloccjt",GROUP_ALLOCATAIRES_ACCESSION_AL_SEUL:"allocatairesaccessionalseul",GROUP_ALLOCATAIRES_TRANSMETTRE_DOC:"allocatairestransmettredoc",GROUP_ALLOCATAIRES_DRABS_ANNEEMOINS2_TTPERS:"allocatairesdrabsnmoins2toutespers",GROUP_ALLOCATAIRES_DOM:"allocatairesdom",GROUP_ALLOCATAIRES_LOCATION_AL_SEUL:"allocataireslocationalseul",GROUP_ALLOCATAIRES:"allocataires",GROUP_ALLOCATAIRES_ETUDIANT:"allocatairesetudiant",GROUP_ALLOCATAIRES_AJPA:"allocatairesajpa",GROUP_ALLOCATAIRES_AAH_TRIMESTRIELLE:"allocatairesaahtrimestrielle",GROUP_ALLOCATAIRES_SUSPENSION_DOSSIER:"allocatairessuspensiondossier",GROUP_ALLOCATAIRES_ETUDIANT_UNIV:"allocatairesetudiantuniv",GROUP_ALLOCATAIRES_AUTRES_TUTELLES:"allocatairesautrestutelles",GROUP_ALLOCATAIRES_AAH:"allocatairesaah",GROUP_ADMIN_DELEGATION:"allocatairesadmindelegation",GROUP_BASCULE_DELEGATION:"allocatairesbasculedelegation",GROUP_ALLOCATAIRES_ENCOURS_AFFILIATION:"allocatairesafc",GROUP_ALLOCATAIRES_AMI_AL:"allocatairesamial",GROUP_ALLOCATAIRES_LOCATION_AL:"allocataireslocational",GROUP_ALLOCATAIRES_DOSSIER_PRINCIPAL:"allocatairesdossierprincipal",GROUP_ALLOCATAIRES_DTRSA:"allocatairesdtrsa",GROUP_CONJOINTS_DR:"conjointsdr",GROUP_CONJOINTS_AAH_ANNUELLE:"conjointsaahannuelle",GROUP_ALLOCATAIRES_AFFICHER_RESSOURCES:"allocatairesafficherressources",GROUP_ALLOCATAIRES_INSTITUTIONNEL:"allocatairesinstitutionnel",GROUP_ALLOCATAIRES_AL_24_DERNIERS_MOIS:"allocatairesal24derniersmois",GROUP_CONJOINTS_AL:"conjointsal",GROUP_ALLOCATAIRES_TUTELLE4:"allocatairestutelle4",GROUP_ALLOCATAIRES_DRABS_ANNEEMOINS1_ALLOCCJT:"allocatairesdrabsnmoins1alloccjt",GROUP_TUTEUR_PHYSIQUE:"tuteurphysique",GROUP_ALLOCATAIRES_PATRIMOINE:"allocatairespatrimoine",GROUP_ALLOCATAIRES_LOCATION_APL_SEUL:"allocataireslocationaplseul",GROUP_CONJOINTS_AAH:"conjointsaah",GROUP_ALLOCATAIRES_AL_SEUL:"allocatairesalseul",GROUP_ALLOCATAIRES_PAJEMPLOI:"allocatairespajeemploi",GROUP_ALLOCATAIRES_EBO:"allocatairesebo",GROUP_CONJOINTS_ETU_MAINTIEN_LOG:"conjointsetumaintienlog",GROUP_ALLOCATAIRES_TUTELLE48:"allocatairestutelle48",GROUP_ALLOCATAIRES_DTRPA:"allocatairesdtrpa",GROUP_ALLOCATAIRES_DRABS_ANNEEMOINS1_TTPERS:"allocatairesdrabsnmoins1toutespers",GROUP_ALLOCATAIRES_MAYOTTE:"allocatairesmayotte",GROUP_ALLOCATAIRES_CAFMIGREEMDP:"allocatairescafmigreemdp",GROUP_CONJOINTS_DTRSA:"conjointsdtrsa",GROUP_ALLOCATAIRES_AL:"allocatairesal",GROUP_CONJOINTS_EBO:"conjointsebo",GROUP_ALLOCATAIRES_RID:"allocatairesrecueilinformation",GROUP_CONJOINTS_PATRIMOINE:"conjointspatrimoine",GROUP_TUTEUR_MORAL:"tuteurmoral",GROUP_CONJOINTS_APL_SEUL:"conjointsaplseul",GROUP_CONJOINTS:"conjoints",GROUP_ALLOCATAIRES_AAH_COUPLE_CONJUGALISE:"allocatairesaahtrimestriellecoupleconjugalise",GROUP_ALLOCATAIRES_DEMARCHES_ET_COURRIERS:"allocatairesdemarchesetcourriers",GROUP_ALLOCATAIRES_AAH_ANNUELLE_ISOLE:"allocatairesaahannuelleisole"},
+	'dateEnvCaffr':'20231119'
+};
+
+<!-- Paramétrage de l'espace : usager ou partenaire -->
+    mapForAngularAppli.espace='usager';
+	mapForAngularAppli.redirectDeconnexion = "/redirect/s/Redirect?page=monCompteDeconnexion";
+
+	
+		var displayModalPerteSession = function(redirectionUrl) {
+			if ($document[0].querySelector('#modal-title-pertesession') === null) {
+			  try {
+				  $injector.get('$uibModal').open({
+					animation: true,
+					ariaLabelledBy: 'modal-title-pertesession',
+					ariaDescribedBy: 'modal-body-pertesession',
+					template: "<div class='modal-header'>"+
+								"  <button type='button' class='close' data-dismiss='modal' aria-hidden='true' ng-click='popupModalPerteSessionVm.fermer()'>&times;</button>"+
+								"  <h4 class='modal-title'>"+
+								"    <span class='glyphicon glyphicon-alert text-danger' aria-hidden='true'></span>"+
+								"    &nbsp;<span id='modal-title-pertesession'>Session expirée</span>"+
+								"  </h4>"+
+								"</div>"+
+								"<div class='modal-body' id='modal-body-pertesession'>"+
+								"  Vous devez vous reconnecter."+
+								"</div>"+
+								"<div class='modal-footer'>"+
+								"  <button type='button' class='btn btn-default' data-dismiss='modal' ng-click='popupModalPerteSessionVm.fermer()'>Fermer</button>"+
+								"</div>",
+					backdrop: 'static',
+					controller: ['$uibModalInstance', function($uibModalInstance) {
+						var vm = this;
+						vm.fermer = function () {
+							$uibModalInstance.dismiss('cancel');
+						};
+					}],
+					controllerAs: 'popupModalPerteSessionVm',
+					appendTo: angular.element($document[0].querySelector('body'))
+				  }).closed.then(function() {
+				  	window.onbeforeunload = null;
+					$window.location.href = redirectionUrl;
+				  });
+			  } catch (e) {
+				  alert("Session expirée\n\nVous devez vous reconnecter.");
+				  window.onbeforeunload = null;
+				  $window.location.href = redirectionUrl;
+			  }
+			}
+		};
+	
+</script>
+
+
+	<!-- Bundle nouveau navigateur --> 
+	<script src="/courrierscourrielsappli/dist/runtime.js?id=1700359365797" type="module"></script> 
+	<script src="/courrierscourrielsappli/dist/polyfills.js?id=1700359365797" type="module"></script> 
+	<script src="/courrierscourrielsappli/dist/main.js?id=1700359365797" type="module"></script> 
+	  
+	<!-- Bundle ancien navigateur -->
+	<script src="/courrierscourrielsappli/dist/runtime-es5.js?id=1700359365797" nomodule></script> 
+	<script src="/courrierscourrielsappli/dist/polyfills-es5.js?id=1700359365797" nomodule></script> 
+	<script src="/courrierscourrielsappli/dist/main-es5.js?id=1700359365797" nomodule></script> 
+
+
+</div></div> 
+</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</main>
+			<!-- FIN CONTENU -->
+				
+		   
+	
+			<!-- DEBUT FOOTER -->
+			<!-- pour le simulateur PA, restÃ© ancienne charte non RSL (propriÃ©tÃ© icfAngular non prÃ©sente), il y a header/footer simplifiÃ©s ,
+				 cela doit restÃ© comme cela jusqu'Ã  la rÃ©Ã©criture de l'appli en RSL -->
+				 			
+				
+
+
+
+
+
+
+
+
+
+
+
+<footer id="theme-footer-caf" role="contentinfo">
+	<div class="container-fluid">
+		<div class="row theme-footer-up-caf">
+			<div class="col-md-12">
+				<div class="row theme-footer-up-row-caf">
+					<div class="col-xs-9 col-sm-9 col-md-2 theme-footer-up-left-caf">
+					
+						<h2 class="panel-title">
+							Vous pouvez nous contacter
+						</h2>
+					
+					
+						<a class="panel-link" href="/redirect/s/Redirect?page=facebookCaf&origine=drupal" target="_blank" title="Suivez-nous sur Facebook (nouvelle fenêtre)">
+							Suivez-nous sur Facebook
+							
+							<img alt="" src="/icfstatiquesangularappli/dist/images/Group.svg" />
+							
+						</a>
+					
+					</div>
+					<div class="hidden-md hidden-lg clearfix"></div>
+					<div class="col-md-offset-3 col-md-9 theme-footer-up-right-caf">
+						<div class="row display-flex">
+						
+							<div class="col-md-5 ">
+								<div class="jumbotron">
+									<h3 class="jumbotron-title">
+									
+										Nous sommes toujours joignables
+									</h3>
+									<p>Par téléphone, sur place ou par courriel, choisissez !</p>
+									<p class="jumbotron-button">
+									
+										<a class="btn btn-primary-cnaf" href="/redirect/s/Redirect?page=maCafContactCaf&origine=drupal" >Nous contacter</a>
+									
+									</p>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row theme-footer-middle-caf">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-9">
+						<div class="row panel-group" id="theme-footer-middle-block-links-accordion-caf">
+						
+							<div class="col-md-4 panel panel-default theme-footer-middle-block-caf">
+								<div class="panel-heading hidden-md hidden-lg" role="heading" aria-level="3">
+									<div class="panel-title">
+										<a class="accordion-toggle btn-block collapsed" data-toggle="collapse" data-parent="#theme-footer-middle-block-links-accordion-caf" href="#theme-footer-middle-block-links-1-caf" role="button">
+											Espaces
+										</a>
+									</div>
+								</div>
+								<p class="visible-md visible-lg panel-title theme-footer-middle-block-title-caf" role="heading" aria-level="3">Espaces</p>
+								
+								<ul id="theme-footer-middle-block-links-1-caf" class="panel-collapse collapse theme-footer-middle-block-links-caf">
+									
+										<li><a href="https://www.caf.fr/allocataires" >Allocataires</a></li>
+									
+										<li><a href="https://www.caf.fr/partenaires" >Partenaires</a></li>
+									
+										<li><a href="https://www.caf.fr/nous-connaitre" >Nous connaître</a></li>
+									
+								</ul>
+								
+							</div>
+						
+							<div class="col-md-4 panel panel-default theme-footer-middle-block-caf">
+								<div class="panel-heading hidden-md hidden-lg" role="heading" aria-level="3">
+									<div class="panel-title">
+										<a class="accordion-toggle btn-block collapsed" data-toggle="collapse" data-parent="#theme-footer-middle-block-links-accordion-caf" href="#theme-footer-middle-block-links-2-caf" role="button">
+											Informations
+										</a>
+									</div>
+								</div>
+								<p class="visible-md visible-lg panel-title theme-footer-middle-block-title-caf" role="heading" aria-level="3">Informations</p>
+								
+								<ul id="theme-footer-middle-block-links-2-caf" class="panel-collapse collapse theme-footer-middle-block-links-caf">
+									
+										<li><a href="https://www.caf.fr/nous-connaitre/accessibilite" >Accessibilité : partiellement conforme </a></li>
+									
+										<li><a href="https://www.caf.fr/nous-connaitre/mentions-legales" >Mentions légales</a></li>
+									
+										<li><a href="https://www.caf.fr/nous-connaitre/plan-du-site" >Plan du site</a></li>
+									
+										<li><a href="https://www.caf.fr/nous-connaitre/informatique-et-libertes" >Informatique et libertés</a></li>
+									
+										<li><a href="https://www.caf.fr/allocataires/foire-aux-questions" >Foire aux questions</a></li>
+									
+								</ul>
+								
+							</div>
+						
+							<div class="col-md-4 panel panel-default theme-footer-middle-block-caf">
+								<div class="panel-heading hidden-md hidden-lg" role="heading" aria-level="3">
+									<div class="panel-title">
+										<a class="accordion-toggle btn-block collapsed" data-toggle="collapse" data-parent="#theme-footer-middle-block-links-accordion-caf" href="#theme-footer-middle-block-links-3-caf" role="button">
+											Autres sites
+										</a>
+									</div>
+								</div>
+								<p class="visible-md visible-lg panel-title theme-footer-middle-block-title-caf" role="heading" aria-level="3">Autres sites</p>
+								
+								<ul id="theme-footer-middle-block-links-3-caf" class="panel-collapse collapse theme-footer-middle-block-links-caf">
+									
+										<li><a href="https://www.service-public.fr/" target="_blank" title="Service-public.fr (nouvelle fenêtre)">Service-public.fr</a></li>
+									
+										<li><a href="https://monenfant.fr/" target="_blank" title="Monenfant.fr (nouvelle fenêtre)">Monenfant.fr</a></li>
+									
+										<li><a href="https://pension-alimentaire.caf.fr/" target="_blank" title="Pension-alimentaire.caf.fr (nouvelle fenêtre)">Pension-alimentaire.caf.fr</a></li>
+									
+										<li><a href="http://data.caf.fr" target="_blank" title="Data.caf.fr (nouvelle fenêtre)">Data.caf.fr</a></li>
+									
+										<li><a href="http://vacaf.org/" target="_blank" title="Vacaf.org (nouvelle fenêtre)">Vacaf.org</a></li>
+									
+								</ul>
+								
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row theme-footer-down-caf">
+			<div class="col-md-12">
+			
+				<ul>
+				
+					<li><a href="https://www.caf.fr/nous-connaitre/presse" >PRESSE</a></li>
+				
+					<li><a href="https://www.caf.fr/nous-connaitre/emplois-et-carrieres" >EMPLOIS ET CARRIÈRES</a></li>
+				
+					<li><a href="https://www.caf.fr/nous-connaitre/recherche-et-statistiques" >RECHERCHE ET STATISTIQUES</a></li>
+				
+					<li><a href="https://www.caf.fr/nous-connaitre/international" >INTERNATIONAL</a></li>
+				
+					<li><a href="https://www.caf.fr/nous-connaitre/marches-publics" >MARCHÉS PUBLICS</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div id='container-chatbot-cnaf'><div class='container text-right'><div class='row'><div id='iav' class='iav-small iav-replie' style='display: none;'></div></div></div></div><link href='/chatbotappli/dist/av.css?id=1700359364873' rel='stylesheet'>
+
+<script src="/icfstatiquesangularappli/dist/StatiquesCaffr/js/footerCnaf.min.js?id=1700359364873"></script>
+<script>
+	var _iav = {
+	  "base_path" : "/chatbotappli/dist/",
+	  "debug" : false,
+	  "title_text" : "<p> Bonjour, je suis votre conseiller virtuel.</p><p>Je connais déjà beaucoup de réponses à vos questions et j'apprends un peu plus chaque jour.</p>",
+	  "display_auto" : false,
+	  "inactivity_display_timer" : 0,
+	  "service_url" : "/api/basedeconnaissancefront/v1/mon_compte/chatbot",
+	  "authentifie" : true,
+	  "code_organisme" : "623",
+      "public" : "usager",
+	  "cnafTokenJwt": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MjMtMTYxNzY2OCIsImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiI6ImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiIsImxpc3RlRm95ZXJzIjoiMTA2NzE0MDktNjIzLTE2MTc2NjgtdHJ1ZS1BRkYtZmFsc2UiLCJpZEZveWVyIjoiMTA2NzE0MDkiLCJtYXRyaWN1bGUiOiIxNjE3NjY4Iiwicm9sZXMiOlsicmVzcG9uc2FibGVEb3NzaWVyIl0sImFsbG9jYXRhaXJlc2FmZiI6ImFsbG9jYXRhaXJlc2FmZiIsImlzcyI6Imh0dHA6Ly9hdXRoZ2F0ZXdheS5zaS5jbmFmLmluZm86ODg4OCIsImRyYWJzbm1vaW5zMSI6IiIsImNvZGVPcmdhIjoiNjIzIiwiaXNBdXRob3JpemVkIjoidHJ1ZSIsImRyYWJzbm1vaW5zMiI6IiIsImFsbG9jYXRhaXJlc3NpbXVsYXRpb24iOiJhbGxvY2F0YWlyZXNzaW11bGF0aW9uIiwic2NvcGUiOiJ1c2FnZXJzIiwiYWxsb2NhdGFpcmVzbG9jYXRpb25hbCI6ImFsbG9jYXRhaXJlc2xvY2F0aW9uYWwiLCJpZFBlcnNvbm5lIjoiMjc3MDgyNjkiLCJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiOiJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiLCJhbGxvY2F0YWlyZXNhbCI6ImFsbG9jYXRhaXJlc2FsIiwiZXhwIjoxNzAwMzkxOTE2ODg5LCJpYXQiOjE3MDAzOTE2MTY4ODksImp0aSI6ImFlOTZlNTdkLWY1MTMtNGE1NC04YTNjLTZmZmIzYmVhOTM1ZSIsImRhdGVFbnZDYWZmciI6IjIwMjMxMTE5IiwiYWxsb2NhdGFpcmVzdHJhbnNtZXR0cmVkb2MiOiJhbGxvY2F0YWlyZXN0cmFuc21ldHRyZWRvYyIsImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyI6ImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyIsImRhdGVhZmZkYW5zbGVmdXR1ciI6Im51bGwiLCJhbGxvY2F0YWlyZXMiOiJhbGxvY2F0YWlyZXMiLCJhbGxvY2F0YWlyZXNkb3NzaWVycHJpbmNpcGFsIjoiYWxsb2NhdGFpcmVzZG9zc2llcnByaW5jaXBhbCIsImZyYW5jZUNvbm5lY3RlZCI6ImZhbHNlIiwiYXVkIjoiY2FmZnIiLCJhbGxvY2F0YWlyZXNkZW1hcmNoZXNldGNvdXJyaWVycyI6ImFsbG9jYXRhaXJlc2RlbWFyY2hlc2V0Y291cnJpZXJzIiwibmJmIjoxNzAwMzkxNjA2ODg5LCJhbGxvY2F0YWlyZXNhcGxzZXVsIjoiYWxsb2NhdGFpcmVzYXBsc2V1bCIsImRvbWFpbiI6InByaXZhdGUiLCJhbGxvY2F0YWlyZXNhZ2VuZGEiOiJhbGxvY2F0YWlyZXNhZ2VuZGEiLCJhbGxvY2F0YWlyZXNhbDI0ZGVybmllcnNtb2lzIjoiYWxsb2NhdGFpcmVzYWwyNGRlcm5pZXJzbW9pcyIsImRvc3NpZXJQYXJEZWZhdXQiOiJ0cnVlIiwibnVtZXJvaW50ZXJuZXBlcnNvbm5lIjoiNjUxNzgwIn0.A3EwLMx6WYDbPvP5lHNyXFQWXHe25trCh9hB7myG4gnHP0gR_aJ5_Rq9c6Tk5jJ43pjd3FIgeyvfeD8CyVrZzs-4ix82kG-WRllzMmTycclbWrh4KdluZ-zb7hSmENtOuJhWKxceCGhqji1k757-NfvH5_1msnhqUN5Ow8UtUy0fi77Dvxw7kLccQRqHJNlvVMmDtEw2Mf11UnaVjr8JhIfI1lBi19T_ttV5ejWtndf6ppJLz8ts_Syh4P37hIfRqIJ0BvL8aTwRmBjTm_NPvN2WxmwKmBKpA7Gc0X15PGF7B1OqyvxADxp3ejAl8r5YbVhBavaXRqdLP_9mBYwZfg"
+	};
+
+	<!-- DEBUT Gestion Chatbot -->
+	var isChatbotLoaded = 0;
+	jQuery.cachedScript = function(url, options) {
+		options = jQuery.extend( options || {}, {
+			dataType: "script",
+			cache: true,
+			url: url
+		});
+		return jQuery.ajax(options);
+	};
+	function afficheChatbot(rubrique) {
+		
+			jQuery("#container-sticky-camille-cnaf").hide();
+			jQuery("#iav").show();
+			if(_iav == null) {
+				console.log("Probleme chargement chatbot");
+				return;
+			}
+			if(rubrique != undefined){
+			  _iav["rubrique"] = rubrique;
+			}
+			if(true) {
+				_iav["dialog"] = "ouvertureauthentifie";
+			}
+			if(isChatbotLoaded){
+				adaptFooterPaddingForChatbot();
+				return;
+			} else {
+				jQuery.cachedScript("/chatbotappli/dist/av.js?id=1700359364873")
+					.done(function(data, textStatus, jqXHR){isChatbotLoaded = 1; setTimeout(adaptFooterPaddingForChatbot, 1000);})
+					.fail(function(jqXHR, textStatus, errorThrown){
+						console.log("Chargement fichier av.js KO : "+errorThrown);
+					});
+			}		
+						
+	}
+	function cacheChatbot() {
+		
+			jQuery("#container-sticky-camille-cnaf").show();
+			jQuery("#iav").hide();
+			adaptFooterPaddingForChatbot();
+		
+	}
+	<!-- FIN Gestion Chatbot -->
+
+	function adaptFooterPaddingForChatbot() {
+		var footerElement = jQuery("#theme-footer-caf");
+		var camilleElement = jQuery("#sticky-camille-cnaf");
+		var chatbotElement = jQuery("#bouton_plier_deplier");
+		if (footerElement.length == 1) {
+			if (chatbotElement.length == 1 && jQuery("#iav").css("display") !== "none") {
+				footerElement.css("padding-bottom", (chatbotElement.height() + 30) + "px");
+			} else if (camilleElement.length == 1) {
+				footerElement.css("padding-bottom", (camilleElement.height() + 10) + "px");
+			}
+		}
+	}
+	adaptFooterPaddingForChatbot();
+
+	<!-- TEST navigation privee Safari < 11  --> 
+	function storageDisponible(type) {
+		try {
+			var storage = window[type];
+			var x = 'storage_test';
+			storage.setItem(x, x);
+			storage.removeItem(x);
+			return true;
+		} catch(e) {
+			return false;
+		}
+	}
+	function acceptModeDegrade() {
+		var date = new Date();
+		date.setDate(date.getDate() + 100);
+		document.cookie = "cookie-degrade=2; path=/; domain=.caf.fr; expires=" + date.toUTCString();
+		jQuery("#bandeau-accept-degrade").slideUp("slow");
+	}
+	function afficheBandeauModeDegrade() {
+		var statusCookies = getCookie("cookie-degrade");
+		if (statusCookies == "") {
+			jQuery("#bandeau-accept-degrade").slideDown("slow");
+			jQuery("#bandeau-accept-degrade button.agree-button").bind('click', function(){
+				acceptModeDegrade();
+			});
+		}
+	}
+	<!-- FIN TEST navigation privee Safari < 11 -->
+
+		$(document).ready(function(){
+			
+				pageReadyForTheme();
+				afficheBandeauCookies("/redirect/s/Redirect?page=informationsCookiesCaffr&origine=drupal", 100, "cookie-agreed");
+				
+				var localStorageDispo = storageDisponible('localStorage');
+				var sessionStorageDispo = storageDisponible('sessionStorage');
+				if (!localStorageDispo || !sessionStorageDispo) {
+					// Affichage avertissement
+					afficheBandeauModeDegrade();
+				}
+			
+		});
+</script>
+
+			
+            <!-- FIN FOOTER -->
+	       
+			<!--
+			<div id='popin'>
+				<div id="popin-titre"></div>
+				<p id='popin-contenu'> </p>
+				<div class="barre-boutons" >
+					<a class='bouton popin-btn-continuer' href='#' onclick='disablePopin("popin")'>Continuer</a>
+					<a class='bouton popin-btn-annuler' href='#' onclick='disablePopin("popin")'>Annuler</a>
+					<a class='bouton popin-btn-confirmer' href='#' onclick='disablePopin("popin")'>Confirmer</a>
+				</div>
+			</div>
+			<div id='popin-background'>
+			</div>	
+			-->	
+			
+				
+				<script>
+					var userid = "623-1617668";
+					var useridpersonne = "27708269"; 
+				</script>
+			
+		<script>   
+	       function gestionBoxPopupModaleProfileeTheme(namePropLocalStorage, nid)
+				     {
+					    
+					    if ($('#caseAcocher-' + namePropLocalStorage).hasClass('glyphicon-ok')) 
+					      { 
+						  $('#caseAcocher-' + namePropLocalStorage).removeClass('glyphicon-ok');
+						    // enlever le nid du localstorage
+						    $('#caseAcocher-' + namePropLocalStorage).parent().attr('aria-checked', "false");
+							localStorage.removeItem(namePropLocalStorage);
+						  } 
+						  else 
+						  {
+						    $('#caseAcocher-' + namePropLocalStorage).addClass('glyphicon-ok');
+							// mettre le nid dans le localstorage
+							localStorage.setItem(namePropLocalStorage, nid); 
+							  $('#caseAcocher-' + namePropLocalStorage).parent().attr('aria-checked', "true");
+						   }
+						
+				    }
+				    
+				    
+        function affichePopupModaleProfileeTheme(response,portailVirtuelApplicationMobile)
+        {
+	          var displayPopupModalVideo = false;
+	          var displayPopupModalImage = false;
+	          var popupTrouve = false;
+	          var typeclient = null;
+	          //console.log(response);
+	          for (var i = 0; i < response.popup_modale.length; i++) {
+	              typeclient = response.popup_modale[i].type;
+	              if (portailVirtuelApplicationMobile) {
+	                  if (typeclient.toUpperCase() === "MCM") {
+	                      reponse = response.popup_modale[i];
+	                      popupTrouve = true;
+	                      break;
+	                  }
+	
+	              } else if (typeclient.toUpperCase() === "MCW") {
+	                  reponse = response.popup_modale[i];
+	                  popupTrouve = true;
+	                  break;
+	
+	              }
+	          }
+	          if (popupTrouve)
+	          {
+	          var nidPopupModaleProfilee = reponse.id;
+	          var titrePopup = reponse.titre;
+	          var lienVideo = reponse.href_video;
+	          var publication = reponse.publication;
+	          var lienImage = reponse.grande_image;
+	          var lienImageTablette = reponse.moyenne_image;
+	          var lienImageMobile = reponse.petite_image;
+	          var urlImage = reponse.url_image;
+	          var codes_organismes = reponse.codes_organismes;
+	
+	           if (lienVideo != null) {
+	              // popup_modale vidÃ©o
+	              displayPopupModalVideo = true;
+	          } else {
+	              // popup modale image
+	              displayPopupModalImage = true;
+	          }
+	          //console.log("id : " + nidPopupModaleProfilee)
+	          //console.log("titre : "+titrePopup);
+	          //console.log("lien  : "+lienVideo);
+	          //console.log("groupe : "+publication);
+	          //console.log("grande image : "+lienImage);
+	          //console.log("moyenne image : " +lienImageTablette);
+	          //console.log("petite image : "+lienImageMobile);
+	          //console.log("lien image : "+ urlImage);
+	          //console.log("codes_organismes : " +codes_organismes);
+	          //console.log("type : "+typeclient);
+			  if (urlImage == null)  urlImage = "";	
+	
+	          var nidPopupModaleProfileeInLocalStorage = localStorage.getItem('nidPopupModaleProfilee');
+	          if (nidPopupModaleProfileeInLocalStorage != '' && nidPopupModaleProfilee != nidPopupModaleProfileeInLocalStorage)
+	          {
+	
+	            if (displayPopupModalImage) {
+	            	// Audit labellisation e-accessible
+	               var popupTemplate = '<div id="modal-popup-promo" tabindex="-1" class="modal modal-vertical-align-center fade">'+
+	                                    '  <div class="modal-dialog modal-dialog-popup" role="dialog" aria-labelledby="monTitreModal"> '+
+	                                    '   <div class="modal-content"> '+
+	                                    // Audit labellisation e-accessible
+	                                    '     <div class="modal-header"> '+
+	                                    '       <button type="button" class="close-cnaf" data-dismiss="modal" aria-label="Fermer la popup"></button>'+
+	                                    '        <div role="heading" aria-level="4" class="texte-medium text-primary" id="monTitreModal">'+ titrePopup + '</div>' +
+	                                    '      </div>'+
+	                                    '      <div class="modal-body">'+
+	                                    '			<div class="text-center">'+
+	                                    (urlImage != "" ? '       <a href= "'+urlImage +'" target ="blank">' : '')+
+	                                    '				<img src="' + lienImage + '" class="lien-image hidden-xs hidden-sm" alt="Image promotionnelle">'+
+	                                    '				<img src="' + lienImageTablette + '" onerror="this.onerror=null;this.src=\'' + lienImage + '\'" class="lien-image-tablette hidden-xs hidden-md hidden-lg" alt="Image promotionnelle">'+
+	                                    '				<img src="' + lienImageMobile + '" onerror="this.onerror=null;this.src=\'' + lienImage + '\'" class="lien-image-mobile hidden-sm hidden-md hidden-lg" alt="Image promotionnelle">'+
+	                                    '				<span class="lien-image-mobile-fullscreen"><span class="glyphicon glyphicon-fullscreen visible-xs text-primary" onclick="$(\'#modal-popup-promo .lien-image-mobile\').click()"></span>'+
+	                                    (urlImage != "" ? '       </a>' : '')+
+	                                    '			</div>'+
+	                                    '			<!--/p-->'+
+	                                    '   </div>'+
+	                                    // Audit labellisation e-accessible
+	                                    '   <div class="modal-footer">'+
+	                                    '       <div>'+
+	                                    '      	  <label class="align-middle-cnaf checkbox-login-cnaf">'+
+	                                    '         <button type=button  aria-labelledby="labelNePlusAfficher" class="pull-left btn btn-default cnaf-checkbox" role="checkbox" aria-checked="false" onClick="gestionBoxPopupModaleProfileeTheme(\'nidPopupModaleProfilee\', ' + nidPopupModaleProfilee + ');">'+
+	                                    '         <span id="caseAcocher-nidPopupModaleProfilee" class="glyphicon" style="width:10px"></span></button>'+
+	                                    ' 			  <span id="labelNePlusAfficher">Ne plus afficher</span>' +
+	                                    ' 	      </label>'+
+	                                    '        </div>'+
+	                                    '        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>'+
+	                                    '      </div>'+
+	                                    '    </div>'+
+	                                    '  </div>'+
+	                                    '</div>';
+	                $(popupTemplate).modal({backdrop: 'static', keyboard: false});
+	
+	            	
+	            } else if (displayPopupModalVideo) {
+	
+	
+	                    var popupTemplate = '<div id="modal-popup-promo-video" tabindex="-1" class="modal modal-vertical-align-center fade">'+
+	                                        '  <div class="modal-dialog modal-dialog-popup" role="dialog" aria-labelledby="monTitreModal"> '+
+	                                        '    <div class="modal-content">'+
+	                                        // Audit labellisation e-accessible
+	                                        '      <div class="modal-header"> '+
+		                                    '       <button type="button" class="close-cnaf" data-dismiss="modal" aria-label="Fermer la popup"></button>'+
+		                                    '        <div role="heading" aria-level="4" class="texte-medium text-primary" id="monTitreModal">'+ titrePopup + '</div>' +
+		                                    '      </div>'+
+	                                        '      <div class="modal-body">'+
+	                                        '        <div class="embed-responsive embed-responsive-16by9">';
+	                                        if (portailVirtuelApplicationMobile) {
+	                        popupTemplate +='           <a class="embed-responsive-item btn btn-form-cnaf" href="'+ lienVideo.replace(".youtube-nocookie.com", ".youtube.com") + '">'+
+	                                        '             <span class="glyphicon glyphicon-play-circle text-primary" aria-hidden="true"></span>'+
+	                                        '             <span class="sr-only">Visualiser la vidÃ©o</span>'+
+	                                        '           </a>';
+	                                        } else {
+	                        popupTemplate +='           <iframe class="embed-responsive-item" src="'+ lienVideo + '" frameborder="0"></iframe>';
+	                                        }
+	                         // Audit labellisation e-accessible
+	                        popupTemplate +='        </div>'+
+	                                        '        <span class="visible-xs"></span>'+
+	                                        '      </div>'+
+	                                        '      <div class="modal-footer">'+
+		                                    '       <div>'+
+		                                    '      	  <label class="align-middle-cnaf checkbox-login-cnaf">'+
+		                                    '         <button type=button  aria-labelledby="labelNePlusAfficher" class="pull-left btn btn-default cnaf-checkbox" role="checkbox" aria-checked="false" onClick="gestionBoxPopupModaleProfileeTheme(\'nidPopupModaleProfilee\', ' + nidPopupModaleProfilee + ');">'+
+		                                    '         <span id="caseAcocher-nidPopupModaleProfilee" class="glyphicon" style="width:10px"></span></button>'+
+		                                    ' 			  <span id="labelNePlusAfficher">Ne plus afficher</span>' +
+		                                    ' 	      </label>'+
+		                                    '        </div>'+
+		                                    '        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>'+
+	                                        '      </div>'+
+	                                        '    </div>'+
+	                                        '  </div>'+
+	                                        '</div>';
+	                                
+	                    $(document).on('shown.bs.modal', '#modal-popup-promo-video', function() {
+	                        popupVideoMinSizeForMobile();
+	                        $(window).on('resize', popupVideoMinSizeForMobile);
+	                    });
+	                    $(document).on('hidden.bs.modal', '#modal-popup-promo-video', function() {
+	                        popupVideoMinSizeForMobile();
+	                        $(window).off('resize', popupVideoMinSizeForMobile);
+	                        $('#modal-popup-promo-video').remove();
+	                    });
+	                    function popupVideoMinSizeForMobile() {
+	                        if ($("#modal-popup-promo-video .modal-body .visible-xs").is(':visible')) {
+	                            var dialogElement = $("#modal-popup-promo-video .modal-dialog");
+	                            dialogElement.css("min-width", $(window).outerWidth(true) - (dialogElement.outerWidth(true) - dialogElement.outerWidth(false)));
+	                        }
+	                    }
+	                    $(popupTemplate).modal({backdrop: 'static', keyboard: false});
+	
+	              }
+	        }
+	      }
+
+
+        }
+
+			$(document).ready(function(){
+				
+					
+					
+							var token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MjMtMTYxNzY2OCIsImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiI6ImFsbG9jYXRhaXJlc3JlY3VlaWxpbmZvcm1hdGlvbiIsImxpc3RlRm95ZXJzIjoiMTA2NzE0MDktNjIzLTE2MTc2NjgtdHJ1ZS1BRkYtZmFsc2UiLCJpZEZveWVyIjoiMTA2NzE0MDkiLCJtYXRyaWN1bGUiOiIxNjE3NjY4Iiwicm9sZXMiOlsicmVzcG9uc2FibGVEb3NzaWVyIl0sImFsbG9jYXRhaXJlc2FmZiI6ImFsbG9jYXRhaXJlc2FmZiIsImlzcyI6Imh0dHA6Ly9hdXRoZ2F0ZXdheS5zaS5jbmFmLmluZm86ODg4OCIsImRyYWJzbm1vaW5zMSI6IiIsImNvZGVPcmdhIjoiNjIzIiwiaXNBdXRob3JpemVkIjoidHJ1ZSIsImRyYWJzbm1vaW5zMiI6IiIsImFsbG9jYXRhaXJlc3NpbXVsYXRpb24iOiJhbGxvY2F0YWlyZXNzaW11bGF0aW9uIiwic2NvcGUiOiJ1c2FnZXJzIiwiYWxsb2NhdGFpcmVzbG9jYXRpb25hbCI6ImFsbG9jYXRhaXJlc2xvY2F0aW9uYWwiLCJpZFBlcnNvbm5lIjoiMjc3MDgyNjkiLCJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiOiJhbGxvY2F0YWlyZXNsb2NhdGlvbmFwbHNldWwiLCJhbGxvY2F0YWlyZXNhbCI6ImFsbG9jYXRhaXJlc2FsIiwiZXhwIjoxNzAwMzkxOTE2ODg5LCJpYXQiOjE3MDAzOTE2MTY4ODksImp0aSI6ImFlOTZlNTdkLWY1MTMtNGE1NC04YTNjLTZmZmIzYmVhOTM1ZSIsImRhdGVFbnZDYWZmciI6IjIwMjMxMTE5IiwiYWxsb2NhdGFpcmVzdHJhbnNtZXR0cmVkb2MiOiJhbGxvY2F0YWlyZXN0cmFuc21ldHRyZWRvYyIsImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyI6ImFsbG9jYXRhaXJlc2FmZmljaGVycmVzc291cmNlcyIsImRhdGVhZmZkYW5zbGVmdXR1ciI6Im51bGwiLCJhbGxvY2F0YWlyZXMiOiJhbGxvY2F0YWlyZXMiLCJhbGxvY2F0YWlyZXNkb3NzaWVycHJpbmNpcGFsIjoiYWxsb2NhdGFpcmVzZG9zc2llcnByaW5jaXBhbCIsImZyYW5jZUNvbm5lY3RlZCI6ImZhbHNlIiwiYXVkIjoiY2FmZnIiLCJhbGxvY2F0YWlyZXNkZW1hcmNoZXNldGNvdXJyaWVycyI6ImFsbG9jYXRhaXJlc2RlbWFyY2hlc2V0Y291cnJpZXJzIiwibmJmIjoxNzAwMzkxNjA2ODg5LCJhbGxvY2F0YWlyZXNhcGxzZXVsIjoiYWxsb2NhdGFpcmVzYXBsc2V1bCIsImRvbWFpbiI6InByaXZhdGUiLCJhbGxvY2F0YWlyZXNhZ2VuZGEiOiJhbGxvY2F0YWlyZXNhZ2VuZGEiLCJhbGxvY2F0YWlyZXNhbDI0ZGVybmllcnNtb2lzIjoiYWxsb2NhdGFpcmVzYWwyNGRlcm5pZXJzbW9pcyIsImRvc3NpZXJQYXJEZWZhdXQiOiJ0cnVlIiwibnVtZXJvaW50ZXJuZXBlcnNvbm5lIjoiNjUxNzgwIn0.A3EwLMx6WYDbPvP5lHNyXFQWXHe25trCh9hB7myG4gnHP0gR_aJ5_Rq9c6Tk5jJ43pjd3FIgeyvfeD8CyVrZzs-4ix82kG-WRllzMmTycclbWrh4KdluZ-zb7hSmENtOuJhWKxceCGhqji1k757-NfvH5_1msnhqUN5Ow8UtUy0fi77Dvxw7kLccQRqHJNlvVMmDtEw2Mf11UnaVjr8JhIfI1lBi19T_ttV5ejWtndf6ppJLz8ts_Syh4P37hIfRqIJ0BvL8aTwRmBjTm_NPvN2WxmwKmBKpA7Gc0X15PGF7B1OqyvxADxp3ejAl8r5YbVhBavaXRqdLP_9mBYwZfg";
+							if (token.indexOf("Bearer ") != 0) {
+								token = "Bearer "+token;
+							}
+							
+								$.ajax({
+									url: "/api/courrierscourrielsfront/v1/mon_compte/messages_non_lus",
+									headers: { "Authorization": token}
+								}).done(function(response) {
+									setBadgeMessage(response.messagesNonLus);
+								});
+							
+					
+				
+			});
+			
+			var timeoutSessionSecondesCnaf = 1200;
+		</script>
+	</body>
+<!-- FIN BODY -->	
+</html>

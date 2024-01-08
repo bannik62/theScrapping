@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Configuration</h2>
+      <form id="configForm">
+          <label for="url">URL:</label>
+          <input type="text" id="url" name="url" required>
+  
+          <label for="identifiant">Identifiant:</label>
+          <input type="text" id="identifiant" name="identifiant" required>
+  
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+  
+          <label for="attribId">Attribut ID:</label>
+          <input type="text" id="attribId" name="attribId" required>
+  
+          <label for="attribPass">Attribut Password:</label>
+          <input type="text" id="attribPass" name="attribPass" required>
+            
+          <label for="btnGo">Attribut bouton :</label>
+          <input type="text" id="btnGo" name="btnGo" required>
+  
+          <button type="submit" id="submit" >Submit</button>
+      </form>
+      <div id="display"></div>
+    </div>
+    <script type="module">
+      
+
+import puppeteer from "puppeteer";
+document.getElementById('submit').addEventListener('click', async () => {
+  console.log("btngood");
+
+
+  // Variables pour la configuration
+  const url = document.getElementById("url")?.value ?? "https://territoiredigital.afpa.fr/fr";
+  const identifiant = document.getElementById("identifiant")?.value ?? "djbannik@gmail.com";
+  const password = document.getElementById("password")?.value ?? "Superyoyo62**afpa";
+  const attribId = document.getElementById("attriId")?.value ?? "#email";
+  const attribPass = document.getElementById("attriPass")?.value ?? "#password";
+  const btnGo = document.getElementById("btnGo")?.value ?? ".btn";
+  const blacklist = [
+    'https://www.afpa.fr/c/portal/login?service=https://www.afpa.fr/',
+    'https://www.linkedin.com/company/afpa/'
+    // Ajoutez d'autres liens à éviter ici
+  ];
+  const motsCles = ['dwwm', 'DWWM', 'passboc', 'claire']; // Ajoutez vos mots-clés ici
+
+  // Fonction de scraping de la page
+  const scrappingPage = async (page) => {
+    const content = await page.content();
+
+    // Faire du scraping sur le contenu
+    const emails = content.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
+    console.log('Emails trouvés:', emails);
+
+    const numeros = content.match(/\+\d+/g);
+    console.log('Numéros de téléphone trouvés:', numeros);
+
+    const liens = content.match(/<a [^>]*href=["']([^"']+)/g);
+    console.log('Liens trouvés:');
+    liens.forEach(lien => {
+      console.log(lien.replace(/<a [^>]*href=["']/, ''));
+    });
+  };
+
+  // Fonction de navigation et de scraping
+  const navigateAndScrap = async (page, lien) => {
+    const urlRegex = /^(http|https):\/\/[^ "]+$/;
+    if (!urlRegex.test(lien)) {
+      console.log(`L'URL n'est pas valide : ${lien}`);
+      return;
+    }
+
+    if (blacklist.includes(lien)) {
+      console.log(`L'URL est dans la liste noire, ignorée : ${lien}`);
+      return;
+    }
+
+    console.log(`Navigation vers : ${lien}`);
+    await page.goto(lien);
+    await scrappingPage(page);
+  };
+
+  // Fonction principale
+  const main = async () => {
+    const browser = await puppeteer.launch({ headless: false});
+    const page = await browser.newPage();
+
+    if (identifiant && password) {
+      await page.goto(url);
+      await page.waitForSelector(attribId);
+      await page.type(attribId, identifiant);
+      await page.type(attribPass, password);
+      await page.click(btnGo);
+      await page.waitForNavigation();
+    }
+
+    await page.goto(url);
+    await page.waitForTimeout(5000);
+
+    const liens = await page.evaluate(() => {
+      const anchors = document.querySelectorAll('a');
+      return Array.from(anchors, anchor => anchor.href);
+    });
+
+    for (const lien of liens) {
+      await navigateAndScrap(page, lien);
+      console.log("Page visitée : " + lien);
+    }
+
+    await browser.close();
+  };
+
+  // Exécutez la fonction principale
+  await main();
+});
+
+     </script>
+    <script  src="./basic.js" crossorigin="anonymous"></script>
+  </body>
+</html>

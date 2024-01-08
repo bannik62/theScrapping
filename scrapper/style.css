@@ -1,0 +1,17 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#display{
+  height: 400px;
+  width: 500px;
+  overflow: auto;
+  border: 2px solid  black;
+}
+#submit{
+  border: 2px solid wheat;
+  color: white;
+  background: #000;
+  width:05px 0 5px ;
+}
